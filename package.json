@@ -2,7 +2,7 @@
   "name": "personal-project",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://anikaahmed114.github.io/anikaahmed_personal",
+  "homepage": "https://anikaahmed114.github.io/portfolio_deploy",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
