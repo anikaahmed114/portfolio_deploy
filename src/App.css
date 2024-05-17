@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cute+Font&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+.about-section {
+  display: flex; 
+  justify-content: space-between; 
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 15%; 
+  gap: 20%;
+}
+
+.nameContainer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  font-family: "Source Code Pro", monospace;
+  color: white;
+  margin-top: 350px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+p{
+  position: relative;
+  font-family: "Source Code Pro", monospace;
+  color: white;
+  margin-top: 10px;
+}
+
+.profileContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 60%; 
+  margin-top: -300px; 
+}
+
+.profileContainer img {
+  width: 450px; 
+  height: 450px;
+  opacity: 1;
+  clip-path: circle(0% at 50% 50%);
+  animation: reveal 1.5s forwards, floating 3s ease-in-out infinite;
+}
+
+.profileContainer:hover img {
+  filter: blur(3px); 
+}
+
+
+@keyframes reveal {
+  0% {
+    clip-path: circle(0% at 50% 50%);
+  }
+  100% {
+    clip-path: circle(50% at 50% 50%);
+  }
+}
+
+@keyframes floating {
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(10px);
+  }
+  0%{
+    transform: translateY(0px);
+  }
+}
+
+.container {
+  position: relative;
+  border-radius: 5px;
+  padding: 40px;
+  z-index: 1;
+  flex: 1; 
+  margin: 20px; 
+  min-width: 300px;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Add a shadow for depth */
+  backdrop-filter: blur(10px); /* Optional: Add a blur effect for a frosted glass look */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border to define edges */
+  transition: background 2s, opacity 2s; /* Smooth transition for both background and opacity */
+  opacity: 0; /* Start fully transparent */
+}
+
+.container.scrolled {
+  background: rgba(255, 255, 255, 0.2); /* Slightly more opaque when scrolled into view */
+  opacity: 1; /* Fully opaque when scrolled into view */
+}
+
+.container h1{
+  font-family: "Source Code Pro";
+  color: white;
+}
+
+.container li {
+  font-family: Rubik;
+  padding: 5px;
+  text-align: left;
+  color: white;
+}
+
+button{
+  --color: #229091;
+  --_g: linear-gradient(var(--color) 0 0) no-repeat;
+  background:
+    var(--_g) calc(var(--_p, 0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p, 0%)) 0%,
+    var(--_g) calc(var(--_p, 0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p, 0%)) 100%;
+  background-size: 50.5% calc(var(--_p, 0%) / 2 + .5%);
+  transition: background-size .4s, background-position 0s .4s;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;  
+  color: white;
+  margin-top: 20%;
+}
+
+button:hover {
+  --_p: 100%;
+  transition: background-position .4s, background-size 0s;
+}
+
