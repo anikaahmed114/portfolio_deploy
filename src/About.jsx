@@ -40,10 +40,6 @@ export const About = () => {
           }
         };
       }, []);
-
-      const openPDF = () => {
-        window.open('https://drive.google.com/file/d/1N3UStxU1HEiQWdrgS1w_OXf_F1dAml8n/view?usp=sharing');
-      }
     
     return(
         <div className = "about-section">
@@ -60,7 +56,9 @@ export const About = () => {
             <li>Java, JavaScript, Python, R, C</li>
             <li>Git, Tableau</li>
             <li>Pandas, MatPlotLib</li>
-            <button onClick={openPDF}>my resume</button>
+            <a href="https://drive.google.com/file/d/1N3UStxU1HEiQWdrgS1w_OXf_F1dAml8n/view?usp=sharing" target="_blank" rel="noopener noreferrer">;
+                    <button>my resume</button>
+                </a>
         </div>
         </div>
     )
