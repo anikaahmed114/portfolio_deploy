@@ -42,8 +42,7 @@ export const About = () => {
       }, []);
 
       const openPDF = () => {
-        window.open('/resume.pdf');
-        return false;
+        window.open('https://drive.google.com/file/d/1N3UStxU1HEiQWdrgS1w_OXf_F1dAml8n/view?usp=sharing');
       }
     
     return(
