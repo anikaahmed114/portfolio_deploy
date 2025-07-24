@@ -45,17 +45,19 @@ export const About = () => {
         <div className = "about-section">
         <div className="container" ref={containerRef}>
         <h1>about me</h1>
-        <li>I am a rising junior, pursuing my undergraduate degrees in computer science and mathematics</li>
-        <li>I attend the University of North Carolina at Chapel Hill</li>
-        <li>I'm currently interested in the applications of AI/ML in computer science</li>
+        <li>I am a senior at UNC Chapel Hill studying computer science and mathematics</li>
+        <li>I have a strong background in software development, particularly in front-end work</li>
         <li>For fun, I love reading manga and watching anime</li>
         </div>
         <div className = "container" ref = {containerRef2}>
             <h1>skills
             </h1>
-            <li>Java, JavaScript, Python, R, C</li>
-            <li>Git, Tableau</li>
-            <li>Pandas, MatPlotLib</li>
+            <li>
+              <b>Languages:</b> Java, JavaScript, Python, R, C, TypeScript, SQL, HTML, CSS</li>
+            <li>
+              <b>Developer Tools:</b> Git, Tableau, VS Code, Postman, Oracle</li>
+            <li>
+              <b>Frameworks/Libraries:</b> Pandas, MatPlotLib, NumPy, Angular, React</li>
             <a href="https://drive.google.com/file/d/1N3UStxU1HEiQWdrgS1w_OXf_F1dAml8n/view?usp=sharing" target="_blank" rel="noopener noreferrer">;
                     <button>my resume</button>
                 </a>

@@ -6,14 +6,14 @@
   justify-content: center; /* Center the items horizontally */
   align-items: center; /* Center the items vertically */
   gap: 40px; /* Add space between the items */
-  margin: 20px auto; /* Center the container horizontally and add vertical spacing */
+  margin: 20px auto; 
 }
 
 .project-container {
   color: white;
   font-family: "Source Code Pro", monospace;
-  width: 250px; /* Adjust size as needed */
-  height: 250px; /* Adjust size as needed */
+  width: 250px; 
+  height: 250px; 
   border: 2px solid white; /* White border */
   border-radius: 50%; 
   display: flex;

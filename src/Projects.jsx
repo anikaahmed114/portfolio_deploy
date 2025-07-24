@@ -56,7 +56,7 @@ export const Projects = () => {
           </a>
 
         </div>
-        <p>Full stack task manager application. Used Firebase for authentication, React for frontend, MongoDB for database management</p>
+        <p>Full stack task manager application. Used Firebase for authentication, the React framework, Express for the backend, and MongoDB for database management</p>
       </div>
     </div>
   );
